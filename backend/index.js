@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const mongoURI = "mongodb+srv://jagtapsumit668:k9twuiN9AjhRZlro@cluster0.tz6fwxx.mongodb.net/register_demo"
+const mongoURI = MONGODB_URL; ///db url
 
 const connectToMongo = async () => {
   try {
